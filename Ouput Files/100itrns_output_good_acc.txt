@@ -1,0 +1,333 @@
+use random seed: 3596
+=== Training classifier for source domain ===
+>>> Source Encoder <<<
+LeNetEncoder(
+  (encoder): Sequential(
+    (0): Conv2d(1, 20, kernel_size=(5, 5), stride=(1, 1))
+    (1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (2): ReLU()
+    (3): Conv2d(20, 50, kernel_size=(5, 5), stride=(1, 1))
+    (4): Dropout2d(p=0.5, inplace=False)
+    (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (6): ReLU()
+  )
+  (fc1): Linear(in_features=800, out_features=500, bias=True)
+)
+>>> Source Classifier <<<
+LeNetClassifier(
+  (fc2): Linear(in_features=500, out_features=10, bias=True)
+)
+Epoch [1/3] Step [20/1200]: loss=2.2950308322906494
+Epoch [1/3] Step [40/1200]: loss=2.285715341567993
+Epoch [1/3] Step [60/1200]: loss=2.279433488845825
+Epoch [1/3] Step [80/1200]: loss=2.2374885082244873
+Epoch [1/3] Step [100/1200]: loss=2.197986602783203
+Epoch [1/3] Step [120/1200]: loss=2.133970022201538
+Epoch [1/3] Step [140/1200]: loss=1.9543099403381348
+Epoch [1/3] Step [160/1200]: loss=1.8366280794143677
+Epoch [1/3] Step [180/1200]: loss=1.7163118124008179
+Epoch [1/3] Step [200/1200]: loss=1.5183486938476562
+Epoch [1/3] Step [220/1200]: loss=1.2314772605895996
+Epoch [1/3] Step [240/1200]: loss=1.2389113903045654
+Epoch [1/3] Step [260/1200]: loss=0.9566293954849243
+Epoch [1/3] Step [280/1200]: loss=1.0470614433288574
+Epoch [1/3] Step [300/1200]: loss=0.863789439201355
+Epoch [1/3] Step [320/1200]: loss=0.7961128354072571
+Epoch [1/3] Step [340/1200]: loss=0.8790258765220642
+Epoch [1/3] Step [360/1200]: loss=0.5129899978637695
+Epoch [1/3] Step [380/1200]: loss=0.6446359753608704
+Epoch [1/3] Step [400/1200]: loss=0.6760880351066589
+Epoch [1/3] Step [420/1200]: loss=0.6030017733573914
+Epoch [1/3] Step [440/1200]: loss=0.603855550289154
+Epoch [1/3] Step [460/1200]: loss=0.3537103235721588
+Epoch [1/3] Step [480/1200]: loss=0.36589038372039795
+Epoch [1/3] Step [500/1200]: loss=0.76761794090271
+Epoch [1/3] Step [520/1200]: loss=0.3901965022087097
+Epoch [1/3] Step [540/1200]: loss=0.4105339050292969
+Epoch [1/3] Step [560/1200]: loss=0.29399412870407104
+Epoch [1/3] Step [580/1200]: loss=0.5013912320137024
+Epoch [1/3] Step [600/1200]: loss=0.2997229993343353
+Epoch [1/3] Step [620/1200]: loss=0.5773972868919373
+Epoch [1/3] Step [640/1200]: loss=0.43359091877937317
+Epoch [1/3] Step [660/1200]: loss=0.5078523755073547
+Epoch [1/3] Step [680/1200]: loss=0.29823824763298035
+Epoch [1/3] Step [700/1200]: loss=0.21540334820747375
+Epoch [1/3] Step [720/1200]: loss=0.32043853402137756
+Epoch [1/3] Step [740/1200]: loss=0.2883080840110779
+Epoch [1/3] Step [760/1200]: loss=0.22988606989383698
+Epoch [1/3] Step [780/1200]: loss=0.2470957189798355
+Epoch [1/3] Step [800/1200]: loss=0.35481536388397217
+Epoch [1/3] Step [820/1200]: loss=0.3599214553833008
+Epoch [1/3] Step [840/1200]: loss=0.5559548735618591
+Epoch [1/3] Step [860/1200]: loss=0.35494887828826904
+Epoch [1/3] Step [880/1200]: loss=0.25475627183914185
+Epoch [1/3] Step [900/1200]: loss=0.4207817316055298
+Epoch [1/3] Step [920/1200]: loss=0.3070271611213684
+Epoch [1/3] Step [940/1200]: loss=0.36742305755615234
+Epoch [1/3] Step [960/1200]: loss=0.08116170763969421
+Epoch [1/3] Step [980/1200]: loss=0.19527362287044525
+Epoch [1/3] Step [1000/1200]: loss=0.3790467381477356
+Epoch [1/3] Step [1020/1200]: loss=0.38080525398254395
+Epoch [1/3] Step [1040/1200]: loss=0.20834007859230042
+Epoch [1/3] Step [1060/1200]: loss=0.28759652376174927
+Epoch [1/3] Step [1080/1200]: loss=0.324970006942749
+Epoch [1/3] Step [1100/1200]: loss=0.4027208089828491
+Epoch [1/3] Step [1120/1200]: loss=0.1461835503578186
+Epoch [1/3] Step [1140/1200]: loss=0.1359473466873169
+Epoch [1/3] Step [1160/1200]: loss=0.3722711205482483
+Epoch [1/3] Step [1180/1200]: loss=0.2824271619319916
+Epoch [1/3] Step [1200/1200]: loss=0.320839524269104
+Epoch [2/3] Step [20/1200]: loss=0.21263070404529572
+Epoch [2/3] Step [40/1200]: loss=0.22157002985477448
+Epoch [2/3] Step [60/1200]: loss=0.2559308111667633
+Epoch [2/3] Step [80/1200]: loss=0.1863286942243576
+Epoch [2/3] Step [100/1200]: loss=0.16558530926704407
+Epoch [2/3] Step [120/1200]: loss=0.17813800275325775
+Epoch [2/3] Step [140/1200]: loss=0.2020593136548996
+Epoch [2/3] Step [160/1200]: loss=0.26732128858566284
+Epoch [2/3] Step [180/1200]: loss=0.14278745651245117
+Epoch [2/3] Step [200/1200]: loss=0.08943156152963638
+Epoch [2/3] Step [220/1200]: loss=0.11762337386608124
+Epoch [2/3] Step [240/1200]: loss=0.1935240775346756
+Epoch [2/3] Step [260/1200]: loss=0.15683835744857788
+Epoch [2/3] Step [280/1200]: loss=0.23305420577526093
+Epoch [2/3] Step [300/1200]: loss=0.20851923525333405
+Epoch [2/3] Step [320/1200]: loss=0.19128543138504028
+Epoch [2/3] Step [340/1200]: loss=0.20698316395282745
+Epoch [2/3] Step [360/1200]: loss=0.21081726253032684
+Epoch [2/3] Step [380/1200]: loss=0.15138889849185944
+Epoch [2/3] Step [400/1200]: loss=0.07387842983007431
+Epoch [2/3] Step [420/1200]: loss=0.1200079545378685
+Epoch [2/3] Step [440/1200]: loss=0.04411780461668968
+Epoch [2/3] Step [460/1200]: loss=0.10593485832214355
+Epoch [2/3] Step [480/1200]: loss=0.0899960994720459
+Epoch [2/3] Step [500/1200]: loss=0.39505890011787415
+Epoch [2/3] Step [520/1200]: loss=0.20554667711257935
+Epoch [2/3] Step [540/1200]: loss=0.3006837069988251
+Epoch [2/3] Step [560/1200]: loss=0.18092238903045654
+Epoch [2/3] Step [580/1200]: loss=0.33260512351989746
+Epoch [2/3] Step [600/1200]: loss=0.18582473695278168
+Epoch [2/3] Step [620/1200]: loss=0.37249618768692017
+Epoch [2/3] Step [640/1200]: loss=0.23002803325653076
+Epoch [2/3] Step [660/1200]: loss=0.34799522161483765
+Epoch [2/3] Step [680/1200]: loss=0.11588187515735626
+Epoch [2/3] Step [700/1200]: loss=0.2418184131383896
+Epoch [2/3] Step [720/1200]: loss=0.08387123048305511
+Epoch [2/3] Step [740/1200]: loss=0.13772206008434296
+Epoch [2/3] Step [760/1200]: loss=0.15715667605400085
+Epoch [2/3] Step [780/1200]: loss=0.48440802097320557
+Epoch [2/3] Step [800/1200]: loss=0.1685374230146408
+Epoch [2/3] Step [820/1200]: loss=0.30894678831100464
+Epoch [2/3] Step [840/1200]: loss=0.23707255721092224
+Epoch [2/3] Step [860/1200]: loss=0.17825673520565033
+Epoch [2/3] Step [880/1200]: loss=0.12424350529909134
+Epoch [2/3] Step [900/1200]: loss=0.21651069819927216
+Epoch [2/3] Step [920/1200]: loss=0.30204635858535767
+Epoch [2/3] Step [940/1200]: loss=0.16998033225536346
+Epoch [2/3] Step [960/1200]: loss=0.06445418298244476
+Epoch [2/3] Step [980/1200]: loss=0.23914222419261932
+Epoch [2/3] Step [1000/1200]: loss=0.15139099955558777
+Epoch [2/3] Step [1020/1200]: loss=0.0515095554292202
+Epoch [2/3] Step [1040/1200]: loss=0.07246340066194534
+Epoch [2/3] Step [1060/1200]: loss=0.2760102152824402
+Epoch [2/3] Step [1080/1200]: loss=0.2993413507938385
+Epoch [2/3] Step [1100/1200]: loss=0.07285410910844803
+Epoch [2/3] Step [1120/1200]: loss=0.05350099503993988
+Epoch [2/3] Step [1140/1200]: loss=0.06699874997138977
+Epoch [2/3] Step [1160/1200]: loss=0.3032001554965973
+Epoch [2/3] Step [1180/1200]: loss=0.2247423231601715
+Epoch [2/3] Step [1200/1200]: loss=0.09821020066738129
+Epoch [3/3] Step [20/1200]: loss=0.15902042388916016
+Epoch [3/3] Step [40/1200]: loss=0.15764224529266357
+Epoch [3/3] Step [60/1200]: loss=0.1702781468629837
+Epoch [3/3] Step [80/1200]: loss=0.11219204217195511
+Epoch [3/3] Step [100/1200]: loss=0.12333747744560242
+Epoch [3/3] Step [120/1200]: loss=0.14475077390670776
+Epoch [3/3] Step [140/1200]: loss=0.13982155919075012
+Epoch [3/3] Step [160/1200]: loss=0.12226727604866028
+Epoch [3/3] Step [180/1200]: loss=0.04405638575553894
+Epoch [3/3] Step [200/1200]: loss=0.2215866893529892
+Epoch [3/3] Step [220/1200]: loss=0.14261513948440552
+Epoch [3/3] Step [240/1200]: loss=0.06981303542852402
+Epoch [3/3] Step [260/1200]: loss=0.16759391129016876
+Epoch [3/3] Step [280/1200]: loss=0.09575744718313217
+Epoch [3/3] Step [300/1200]: loss=0.17662756145000458
+Epoch [3/3] Step [320/1200]: loss=0.06949993968009949
+Epoch [3/3] Step [340/1200]: loss=0.32192444801330566
+Epoch [3/3] Step [360/1200]: loss=0.27521881461143494
+Epoch [3/3] Step [380/1200]: loss=0.24451285600662231
+Epoch [3/3] Step [400/1200]: loss=0.09217078238725662
+Epoch [3/3] Step [420/1200]: loss=0.10921655595302582
+Epoch [3/3] Step [440/1200]: loss=0.1001768708229065
+Epoch [3/3] Step [460/1200]: loss=0.06914161145687103
+Epoch [3/3] Step [480/1200]: loss=0.07090890407562256
+Epoch [3/3] Step [500/1200]: loss=0.07321958243846893
+Epoch [3/3] Step [520/1200]: loss=0.11391688138246536
+Epoch [3/3] Step [540/1200]: loss=0.05712170898914337
+Epoch [3/3] Step [560/1200]: loss=0.08354197442531586
+Epoch [3/3] Step [580/1200]: loss=0.1942501962184906
+Epoch [3/3] Step [600/1200]: loss=0.042736541479825974
+Epoch [3/3] Step [620/1200]: loss=0.07221927493810654
+Epoch [3/3] Step [640/1200]: loss=0.12107525765895844
+Epoch [3/3] Step [660/1200]: loss=0.0687158852815628
+Epoch [3/3] Step [680/1200]: loss=0.24707555770874023
+Epoch [3/3] Step [700/1200]: loss=0.08726071566343307
+Epoch [3/3] Step [720/1200]: loss=0.12361571937799454
+Epoch [3/3] Step [740/1200]: loss=0.14268691837787628
+Epoch [3/3] Step [760/1200]: loss=0.07458742707967758
+Epoch [3/3] Step [780/1200]: loss=0.1044691652059555
+Epoch [3/3] Step [800/1200]: loss=0.2089129388332367
+Epoch [3/3] Step [820/1200]: loss=0.1178409606218338
+Epoch [3/3] Step [840/1200]: loss=0.06163715943694115
+Epoch [3/3] Step [860/1200]: loss=0.059421177953481674
+Epoch [3/3] Step [880/1200]: loss=0.1693536639213562
+Epoch [3/3] Step [900/1200]: loss=0.2629644572734833
+Epoch [3/3] Step [920/1200]: loss=0.0927492305636406
+Epoch [3/3] Step [940/1200]: loss=0.18270184099674225
+Epoch [3/3] Step [960/1200]: loss=0.06859058886766434
+Epoch [3/3] Step [980/1200]: loss=0.0836823433637619
+Epoch [3/3] Step [1000/1200]: loss=0.23487919569015503
+Epoch [3/3] Step [1020/1200]: loss=0.08278895169496536
+Epoch [3/3] Step [1040/1200]: loss=0.046914033591747284
+Epoch [3/3] Step [1060/1200]: loss=0.043650779873132706
+Epoch [3/3] Step [1080/1200]: loss=0.38446345925331116
+Epoch [3/3] Step [1100/1200]: loss=0.22795511782169342
+Epoch [3/3] Step [1120/1200]: loss=0.024789322167634964
+Epoch [3/3] Step [1140/1200]: loss=0.021910062059760094
+Epoch [3/3] Step [1160/1200]: loss=0.1267581433057785
+Epoch [3/3] Step [1180/1200]: loss=0.031324733048677444
+Epoch [3/3] Step [1200/1200]: loss=0.10525693744421005
+save pretrained model to: snapshots\ADDA-source-encoder-final.pt
+save pretrained model to: snapshots\ADDA-source-classifier-final.pt
+=== Evaluating classifier for source domain ===
+Avg Loss = 0.072732113301754, Avg Accuracy = 97.840000%
+=== Training encoder for target domain ===
+>>> Target Encoder <<<
+LeNetEncoder(
+  (encoder): Sequential(
+    (0): Conv2d(1, 20, kernel_size=(5, 5), stride=(1, 1))
+    (1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (2): ReLU()
+    (3): Conv2d(20, 50, kernel_size=(5, 5), stride=(1, 1))
+    (4): Dropout2d(p=0.5, inplace=False)
+    (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (6): ReLU()
+  )
+  (fc1): Linear(in_features=800, out_features=500, bias=True)
+)
+>>> Critic <<<
+Discriminator(
+  (layer): Sequential(
+    (0): Linear(in_features=500, out_features=500, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=500, out_features=500, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=500, out_features=2, bias=True)
+    (5): LogSoftmax(dim=1)
+  )
+)
+Epoch [1/100] Step [100/149]:d_loss=0.64253 g_loss=0.69241 acc=0.68000
+Epoch [2/100] Step [100/149]:d_loss=0.60964 g_loss=0.87658 acc=0.74000
+Epoch [3/100] Step [100/149]:d_loss=0.60057 g_loss=0.86242 acc=0.72000
+Epoch [4/100] Step [100/149]:d_loss=0.62556 g_loss=0.86505 acc=0.65000
+Epoch [5/100] Step [100/149]:d_loss=0.65626 g_loss=0.79789 acc=0.64000
+Epoch [6/100] Step [100/149]:d_loss=0.64093 g_loss=0.83071 acc=0.60000
+Epoch [7/100] Step [100/149]:d_loss=0.60419 g_loss=0.86717 acc=0.74000
+Epoch [8/100] Step [100/149]:d_loss=0.63201 g_loss=0.91215 acc=0.61000
+Epoch [9/100] Step [100/149]:d_loss=0.64159 g_loss=0.84454 acc=0.74000
+Epoch [10/100] Step [100/149]:d_loss=0.63249 g_loss=0.87277 acc=0.67000
+Epoch [11/100] Step [100/149]:d_loss=0.63710 g_loss=0.88576 acc=0.65000
+Epoch [12/100] Step [100/149]:d_loss=0.67453 g_loss=0.81410 acc=0.61000
+Epoch [13/100] Step [100/149]:d_loss=0.64038 g_loss=0.80380 acc=0.63000
+Epoch [14/100] Step [100/149]:d_loss=0.63680 g_loss=0.84704 acc=0.63000
+Epoch [15/100] Step [100/149]:d_loss=0.65475 g_loss=0.80730 acc=0.60000
+Epoch [16/100] Step [100/149]:d_loss=0.62107 g_loss=0.82514 acc=0.65000
+Epoch [17/100] Step [100/149]:d_loss=0.66240 g_loss=0.86184 acc=0.58000
+Epoch [18/100] Step [100/149]:d_loss=0.67128 g_loss=0.78321 acc=0.60000
+Epoch [19/100] Step [100/149]:d_loss=0.70504 g_loss=0.81723 acc=0.57000
+Epoch [20/100] Step [100/149]:d_loss=0.57443 g_loss=0.86701 acc=0.73000
+Epoch [21/100] Step [100/149]:d_loss=0.59634 g_loss=0.91041 acc=0.67000
+Epoch [22/100] Step [100/149]:d_loss=0.60506 g_loss=0.94038 acc=0.74000
+Epoch [23/100] Step [100/149]:d_loss=0.64800 g_loss=0.93241 acc=0.62000
+Epoch [24/100] Step [100/149]:d_loss=0.62907 g_loss=0.84456 acc=0.68000
+Epoch [25/100] Step [100/149]:d_loss=0.64556 g_loss=0.88366 acc=0.55000
+Epoch [26/100] Step [100/149]:d_loss=0.64768 g_loss=0.80590 acc=0.59000
+Epoch [27/100] Step [100/149]:d_loss=0.64048 g_loss=0.84424 acc=0.70000
+Epoch [28/100] Step [100/149]:d_loss=0.58393 g_loss=0.90856 acc=0.75000
+Epoch [29/100] Step [100/149]:d_loss=0.61683 g_loss=0.92037 acc=0.65000
+Epoch [30/100] Step [100/149]:d_loss=0.60369 g_loss=0.85541 acc=0.69000
+Epoch [31/100] Step [100/149]:d_loss=0.65879 g_loss=0.92666 acc=0.64000
+Epoch [32/100] Step [100/149]:d_loss=0.63670 g_loss=0.87464 acc=0.60000
+Epoch [33/100] Step [100/149]:d_loss=0.63124 g_loss=0.90310 acc=0.66000
+Epoch [34/100] Step [100/149]:d_loss=0.63750 g_loss=0.88597 acc=0.58000
+Epoch [35/100] Step [100/149]:d_loss=0.66365 g_loss=0.86780 acc=0.61000
+Epoch [36/100] Step [100/149]:d_loss=0.63068 g_loss=0.95876 acc=0.60000
+Epoch [37/100] Step [100/149]:d_loss=0.57656 g_loss=0.92322 acc=0.73000
+Epoch [38/100] Step [100/149]:d_loss=0.59568 g_loss=0.92715 acc=0.74000
+Epoch [39/100] Step [100/149]:d_loss=0.61597 g_loss=0.91890 acc=0.72000
+Epoch [40/100] Step [100/149]:d_loss=0.58881 g_loss=0.93050 acc=0.70000
+Epoch [41/100] Step [100/149]:d_loss=0.63047 g_loss=0.80545 acc=0.66000
+Epoch [42/100] Step [100/149]:d_loss=0.65386 g_loss=0.83871 acc=0.62000
+Epoch [43/100] Step [100/149]:d_loss=0.60821 g_loss=0.80221 acc=0.67000
+Epoch [44/100] Step [100/149]:d_loss=0.64946 g_loss=0.86372 acc=0.63000
+Epoch [45/100] Step [100/149]:d_loss=0.62178 g_loss=0.94602 acc=0.67000
+Epoch [46/100] Step [100/149]:d_loss=0.61888 g_loss=0.83338 acc=0.68000
+Epoch [47/100] Step [100/149]:d_loss=0.62267 g_loss=0.90609 acc=0.66000
+Epoch [48/100] Step [100/149]:d_loss=0.62503 g_loss=0.97257 acc=0.67000
+Epoch [49/100] Step [100/149]:d_loss=0.59723 g_loss=0.82908 acc=0.66000
+Epoch [50/100] Step [100/149]:d_loss=0.58886 g_loss=0.94285 acc=0.65000
+Epoch [51/100] Step [100/149]:d_loss=0.61597 g_loss=0.91784 acc=0.65000
+Epoch [52/100] Step [100/149]:d_loss=0.61518 g_loss=0.88736 acc=0.67000
+Epoch [53/100] Step [100/149]:d_loss=0.61718 g_loss=0.93253 acc=0.66000
+Epoch [54/100] Step [100/149]:d_loss=0.61911 g_loss=0.96721 acc=0.68000
+Epoch [55/100] Step [100/149]:d_loss=0.62833 g_loss=0.96642 acc=0.68000
+Epoch [56/100] Step [100/149]:d_loss=0.55029 g_loss=1.00757 acc=0.74000
+Epoch [57/100] Step [100/149]:d_loss=0.58591 g_loss=0.85099 acc=0.64000
+Epoch [58/100] Step [100/149]:d_loss=0.62398 g_loss=0.85218 acc=0.63000
+Epoch [59/100] Step [100/149]:d_loss=0.61257 g_loss=0.95673 acc=0.65000
+Epoch [60/100] Step [100/149]:d_loss=0.63048 g_loss=0.98195 acc=0.64000
+Epoch [61/100] Step [100/149]:d_loss=0.58703 g_loss=1.05157 acc=0.77000
+Epoch [62/100] Step [100/149]:d_loss=0.65663 g_loss=0.91308 acc=0.59000
+Epoch [63/100] Step [100/149]:d_loss=0.59687 g_loss=1.06177 acc=0.66000
+Epoch [64/100] Step [100/149]:d_loss=0.63501 g_loss=0.93514 acc=0.61000
+Epoch [65/100] Step [100/149]:d_loss=0.59729 g_loss=1.07766 acc=0.73000
+Epoch [66/100] Step [100/149]:d_loss=0.61250 g_loss=1.09099 acc=0.64000
+Epoch [67/100] Step [100/149]:d_loss=0.60490 g_loss=0.94703 acc=0.70000
+Epoch [68/100] Step [100/149]:d_loss=0.60174 g_loss=0.90379 acc=0.68000
+Epoch [69/100] Step [100/149]:d_loss=0.60555 g_loss=1.08953 acc=0.67000
+Epoch [70/100] Step [100/149]:d_loss=0.62998 g_loss=1.08140 acc=0.66000
+Epoch [71/100] Step [100/149]:d_loss=0.58825 g_loss=0.97838 acc=0.66000
+Epoch [72/100] Step [100/149]:d_loss=0.56819 g_loss=1.23555 acc=0.73000
+Epoch [73/100] Step [100/149]:d_loss=0.54898 g_loss=0.97821 acc=0.71000
+Epoch [74/100] Step [100/149]:d_loss=0.60469 g_loss=1.02183 acc=0.69000
+Epoch [75/100] Step [100/149]:d_loss=0.55076 g_loss=1.19552 acc=0.76000
+Epoch [76/100] Step [100/149]:d_loss=0.52091 g_loss=1.18470 acc=0.78000
+Epoch [77/100] Step [100/149]:d_loss=0.54815 g_loss=0.96472 acc=0.78000
+Epoch [78/100] Step [100/149]:d_loss=0.59132 g_loss=1.23070 acc=0.67000
+Epoch [79/100] Step [100/149]:d_loss=0.63673 g_loss=0.97879 acc=0.62000
+Epoch [80/100] Step [100/149]:d_loss=0.55025 g_loss=1.11603 acc=0.76000
+Epoch [81/100] Step [100/149]:d_loss=0.58881 g_loss=1.00198 acc=0.64000
+Epoch [82/100] Step [100/149]:d_loss=0.56873 g_loss=0.95911 acc=0.74000
+Epoch [83/100] Step [100/149]:d_loss=0.62030 g_loss=1.04030 acc=0.62000
+Epoch [84/100] Step [100/149]:d_loss=0.57836 g_loss=1.02584 acc=0.76000
+Epoch [85/100] Step [100/149]:d_loss=0.48396 g_loss=1.05291 acc=0.83000
+Epoch [86/100] Step [100/149]:d_loss=0.55246 g_loss=1.63139 acc=0.73000
+Epoch [87/100] Step [100/149]:d_loss=0.52117 g_loss=1.11098 acc=0.72000
+Epoch [88/100] Step [100/149]:d_loss=0.52485 g_loss=1.23474 acc=0.72000
+Epoch [89/100] Step [100/149]:d_loss=0.50730 g_loss=1.02659 acc=0.78000
+Epoch [90/100] Step [100/149]:d_loss=0.53067 g_loss=1.22947 acc=0.73000
+Epoch [91/100] Step [100/149]:d_loss=0.54751 g_loss=0.97370 acc=0.74000
+Epoch [92/100] Step [100/149]:d_loss=0.50815 g_loss=1.29681 acc=0.76000
+Epoch [93/100] Step [100/149]:d_loss=0.60962 g_loss=1.21334 acc=0.63000
+Epoch [94/100] Step [100/149]:d_loss=0.50755 g_loss=1.25302 acc=0.75000
+Epoch [95/100] Step [100/149]:d_loss=0.56537 g_loss=1.13230 acc=0.73000
+Epoch [96/100] Step [100/149]:d_loss=0.56439 g_loss=1.16549 acc=0.70000
+Epoch [97/100] Step [100/149]:d_loss=0.63227 g_loss=1.31657 acc=0.58000
+Epoch [98/100] Step [100/149]:d_loss=0.60384 g_loss=1.27436 acc=0.64000
+Epoch [99/100] Step [100/149]:d_loss=0.50988 g_loss=1.11750 acc=0.73000
+Epoch [100/100] Step [100/149]:d_loss=0.49049 g_loss=1.42896 acc=0.80000
+=== Evaluating classifier for encoded target domain ===
+>>> source only <<<
+Avg Loss = 0.42158374190330505, Avg Accuracy = 85.806452%
+>>> domain adaption <<<
+Avg Loss = 0.14385628700256348, Avg Accuracy = 95.537634%

@@ -1,0 +1,4 @@
+main.py
+adapt.py
+discriminator.py
+params.py # added a new parameter variable, doesn't affect existing ones
